@@ -10,25 +10,25 @@
 <body>
     <script src="script.js" defer></script>
     <div class="logo">
-        <h1>SKETCHPAD</h1>
+      <h1>SKETCHPAD</h1>
     </div>
     <div class="gameWindow">
-        <div class="creator">
-
+      <div class="creator">
+        <input type="text" placeholder="Size (max 100)" class="gridSize">
+        <button class="resetButton">Reset</button>
+      </div>
+      <div class="gameContainer">
+        <div class="toolbar">
+          <!--black, eraser, choose color, rainbow, toggle opacity increase?-->
+          <button class="tool" id="black"><div class="icon"></div><span>Draw</span></button>
+          <button class="tool" id="eraser"><div class="icon"></div><span>Eraser</span></button>
+          <button class="tool" id="rainbow"><div class="icon"><img src="rainbow.gif" alt="a square that keeps changing color"></div><span>Rainbow</span></button>
+          <button class="tool" id="borderToggle"><div class="icon"></div><span>Border toggle</span></button>
         </div>
-        <div class="gameContainer">
-            <div class="toolbar">
-                <!--black, eraser, choose color, rainbow, toggle opacity increase?-->
-                <button class="tool" id="black"></button>
-                <button class="tool" id="eraser"></button>
-                <button class="tool" id="color"></button>
-                <button class="tool" id="rainbow"></button>
-                <button class="tool" id="opacity"></button>
-            </div>
-            <div class="grid">
-            </div>
+        <div class="grid">
         </div>
-        
+      </div>
+    
     </div>
     
 </body>
