@@ -14,7 +14,11 @@
     </div>
     <div class="gameWindow">
       <div class="creator">
-        <input type="text" placeholder="Size (max 100)" class="gridSize">
+        <label for="size">Size </label>
+        <div>
+          <input type="range" min="1" max="100" value="50" placeholder="Size (max 100)" class="gridSize" id="size" oninput="this.nextElementSibling.value = this.value">
+          <output>50</output>
+        </div>
         <button class="resetButton">Reset</button>
       </div>
       <div class="gameContainer">

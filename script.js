@@ -1,9 +1,14 @@
-const N = 16;       //grid size at startup and reset without input
+const N = 50;       //grid size at startup
 
 let globalColor, defaultColor;
 let resetButton;
 let colorActivator;
 let rainbowFlag;
+let ent;
+
+ent=window.addEventListener("keydown", e => {
+    if(e.key === "Enter"){setGrid()}
+})
 
 colorActivator=document.querySelector("body");
 colorActivator.addEventListener("mouseup", stopColor);

@@ -38,9 +38,15 @@ body {
     align-items: center;
 }
 
-.creator input{
-    text-align: center;
+.creator > div {
+    display: flex;
+    gap: 5px;
+    width: 20rem;
 }
+.creator > div > input {
+    flex: 1;
+}
+
 
 .grid{
     display: flex;
