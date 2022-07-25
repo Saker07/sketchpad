@@ -20,7 +20,7 @@ resetButton=document.querySelector(".resetButton");
 resetButton.addEventListener("click", setGrid);
 
 rainbowFlag=false;
-defaultColor="pink";
+defaultColor="white";
 globalColor="black";
 setupButtons();
 
